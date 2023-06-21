@@ -11,6 +11,9 @@ import { IonicModule } from '@ionic/angular';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CoursesComponent } from './courses/courses.component';
 import { FormsModule } from '@angular/forms';
+import { JavaComponent } from './java/java.component';
+import { AngularComponent } from './angular/angular.component';
+import { TestingComponent } from './testing/testing.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +22,10 @@ import { FormsModule } from '@angular/forms';
     AboutComponent,
     ContactComponent,
     NavbarComponent,
-    CoursesComponent
+    CoursesComponent,
+    JavaComponent,
+    AngularComponent,
+    TestingComponent
   ],
   imports: [
     BrowserModule,

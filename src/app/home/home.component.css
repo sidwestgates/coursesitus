@@ -1,3 +1,10 @@
+body {
+  font-family: Arial, sans-serif;
+  padding-left: 50px;
+  text-align: justify;
+  margin: 20px;
+  padding: 20;
+}
 .header {
   background-color: #333;
   color: #fff;
@@ -8,42 +15,6 @@
   font-size: 24px;
   font-weight: bold;
 }
-
-.nav-links a {
-  color: #fff;
-  margin-right: 10px;
-  text-decoration: none;
-}
-
-.nav-links a:hover {
-  text-decoration: underline;
-}
-
-.sidebar {
-  width: 200px;
-  background-color: #f0f0f0;
-  padding: 20px;
-}
-
-.sidebar-menu {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
-.sidebar-menu li {
-  margin-bottom: 10px;
-}
-
-.sidebar-menu a {
-  color: #333;
-  text-decoration: none;
-}
-
-.sidebar-menu a:hover {
-  text-decoration: underline;
-}
-
 .content {
   padding: 20px;
 }
@@ -78,7 +49,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  height: 700px;
   text-align: center;
   background-color: #f2f2f2;
 }

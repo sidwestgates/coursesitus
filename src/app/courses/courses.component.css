@@ -1,3 +1,10 @@
+body {
+  font-family: Arial, sans-serif;
+  padding-left: 100px;
+  text-align: justify;
+  margin: 20px;
+  padding: 20;
+}
 
 .tutorial-list {
     max-width: 600px;
@@ -28,4 +35,14 @@
   
   strong {
     font-weight: bold;
+  }
+  .redirectCoursePage {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 18px;
+    border-radius: 5px;
+    text-decoration: none;
+    background-color: #007bff;
+    color: #fff;
+    transition: background-color 0.3s ease;
   }

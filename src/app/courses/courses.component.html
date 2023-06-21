@@ -1,4 +1,4 @@
-<div class="home-container">
+<body><div class="home-container">
 </div>
 <div class="Courses-list">
     <h2>List Of Courses</h2>
@@ -8,6 +8,9 @@
         <p>{{ tutorial.description }}</p>
         <p><strong>Duration:</strong> {{ tutorial.duration }}</p>
         <p><strong>Level:</strong> {{ tutorial.level }}</p>
+        <p>Learn, explore, and master new skills with our comprehensive tutorials.</p>
+        <button class="redirectCoursePage"(click)="redirectToAnotherComponent(tutorial.title)">Get Started</button>
       </li>
+
     </ul>
-  </div>
+  </div></body>
