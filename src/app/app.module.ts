@@ -9,6 +9,8 @@ import { ContactComponent } from './contact/contact.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { IonicModule } from '@ionic/angular';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { CoursesComponent } from './courses/courses.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -16,10 +18,12 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     HomeComponent,
     AboutComponent,
     ContactComponent,
-    NavbarComponent
+    NavbarComponent,
+    CoursesComponent
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     AppRoutingModule,
     IonicModule.forRoot(),
     BrowserAnimationsModule

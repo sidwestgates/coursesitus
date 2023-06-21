@@ -1,0 +1,13 @@
+<div class="home-container">
+</div>
+<div class="Courses-list">
+    <h2>List Of Courses</h2>
+    <ul>
+      <li *ngFor="let tutorial of tutorials">
+        <h3>{{ tutorial.title }}</h3>
+        <p>{{ tutorial.description }}</p>
+        <p><strong>Duration:</strong> {{ tutorial.duration }}</p>
+        <p><strong>Level:</strong> {{ tutorial.level }}</p>
+      </li>
+    </ul>
+  </div>
