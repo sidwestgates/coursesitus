@@ -21,6 +21,7 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatMenuModule} from '@angular/material/menu';
 import {MatButtonToggleModule} from '@angular/material/button-toggle';
 import {MatCardModule} from '@angular/material/card';
+import {MatDividerModule} from '@angular/material/divider';
 
 @NgModule({
   declarations: [
@@ -36,6 +37,7 @@ import {MatCardModule} from '@angular/material/card';
     NavigationComponent
   ],
   imports: [
+    MatDividerModule,
     MatButtonToggleModule,
     MatCardModule,
     MatGridListModule,

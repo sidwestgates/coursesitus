@@ -1,38 +1,39 @@
 <mat-toolbar color="primary">
   <span>CourseIT-US</span>
   <span class="example-spacer"></span>
-
-  <mat-button-toggle-group name="fontStyle" aria-label="Font Style">
-    <mat-button-toggle value="Login">Login</mat-button-toggle>
-    <mat-button-toggle value="italic">SignUp</mat-button-toggle>
-  </mat-button-toggle-group>
+  <div class="example-button-row">
+    <button mat-fab extended color="accent">Login</button>
+    <button mat-fab extended color="accent">SignUp</button>
+  </div>
 </mat-toolbar>
+<section>
+  <div class="example-button-row">
+    <button mat-raised-button [matMenuTriggerFor]="aboveMenu">Home</button>
+    <mat-menu class="menu1" #aboveMenu="matMenu" yPosition="above">
+      <button mat-menu-item routerLink="/">Home</button>
+    </mat-menu>
 
-<button mat-button [matMenuTriggerFor]="aboveMenu">Home</button>
-<mat-menu #aboveMenu="matMenu" yPosition="above">
-  <button mat-menu-item routerLink="/">Home</button>
+    <button mat-raised-button [matMenuTriggerFor]="belowMenu">About</button>
+    <mat-menu #belowMenu="matMenu" yPosition="below">
+      <button mat-menu-item routerLink="/about">About</button>
+    </mat-menu>
 
-</mat-menu>
+    <button mat-raised-button [matMenuTriggerFor]="beforeMenu">Contact</button>
+    <mat-menu #beforeMenu="matMenu" xPosition="before">
+      <button mat-menu-item routerLink="/contact">Contact</button>
+    </mat-menu>
 
-<button mat-button [matMenuTriggerFor]="belowMenu">About</button>
-<mat-menu #belowMenu="matMenu" yPosition="below">
-  <button mat-menu-item routerLink="/about">About</button>
-</mat-menu>
+    <button mat-raised-button [matMenuTriggerFor]="belowMenu">Services</button>
+    <mat-menu #belowMenu="matMenu" yPosition="below">
+      <button mat-menu-item routerLink="/services">Services</button>
+    </mat-menu>
 
-<button mat-button [matMenuTriggerFor]="beforeMenu">Contact</button>
-<mat-menu #beforeMenu="matMenu" xPosition="before">
-  <button mat-menu-item routerLink="/contact">Contact</button>
-</mat-menu>
-
-<button mat-button [matMenuTriggerFor]="belowMenu">Services</button>
-<mat-menu #belowMenu="matMenu" yPosition="below">
-  <button mat-menu-item routerLink="/services">Services</button>
-</mat-menu>
-
-<button mat-button [matMenuTriggerFor]="afterMenu">Cources</button>
-<mat-menu #afterMenu="matMenu" xPosition="after">
-  <button mat-menu-item routerLink="/java">Java</button>
-  <button mat-menu-item routerLink="/angular">Angular</button>
-  <button mat-menu-item routerLink="/about">Phython</button>
-  <button mat-menu-item routerLink="/about">C++</button>
-</mat-menu>
+    <button mat-raised-button [matMenuTriggerFor]="afterMenu">Cources</button>
+    <mat-menu #afterMenu="matMenu" xPosition="after">
+      <button mat-menu-item routerLink="/java">Java</button>
+      <button mat-menu-item routerLink="/angular">Angular</button>
+      <button mat-menu-item routerLink="/about">Phython</button>
+      <button mat-menu-item routerLink="/about">C++</button>
+    </mat-menu>
+  </div>
+</section>
