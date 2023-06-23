@@ -7,6 +7,8 @@ import { CoursesComponent } from './courses/courses.component';
 import { JavaComponent } from './java/java.component';
 import { AngularComponent } from './angular/angular.component';
 import { TestingComponent } from './testing/testing.component';
+import { LoginComponent } from './login/login.component';
+import { SingupComponent } from './singup/singup.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -16,6 +18,8 @@ const routes: Routes = [
   { path: 'java', component: JavaComponent },
   { path: 'angular', component: AngularComponent },
   { path: 'testing', component: TestingComponent },
+  { path: 'login', component: LoginComponent },
+  { path: 'singup', component: SingupComponent },
   
 ];
 

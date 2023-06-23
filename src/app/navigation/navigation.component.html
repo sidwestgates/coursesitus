@@ -1,32 +1,17 @@
 <mat-toolbar color="primary">
-  <span>CourseIT-US</span>
+  <span routerLink="/">CourseIT-US</span>
   <span class="example-spacer"></span>
   <div class="example-button-row">
-    <button mat-fab extended color="accent">Login</button>
-    <button mat-fab extended color="accent">SignUp</button>
+    <button mat-fab extended color="accent" routerLink="/login">Login</button>
+    <button mat-fab extended color="accent" routerLink="/singup">SignUp</button>
   </div>
 </mat-toolbar>
 <section>
   <div class="example-button-row">
-    <button mat-raised-button [matMenuTriggerFor]="aboveMenu">Home</button>
-    <mat-menu class="menu1" #aboveMenu="matMenu" yPosition="above">
-      <button mat-menu-item routerLink="/">Home</button>
-    </mat-menu>
-
-    <button mat-raised-button [matMenuTriggerFor]="belowMenu">About</button>
-    <mat-menu #belowMenu="matMenu" yPosition="below">
-      <button mat-menu-item routerLink="/about">About</button>
-    </mat-menu>
-
-    <button mat-raised-button [matMenuTriggerFor]="beforeMenu">Contact</button>
-    <mat-menu #beforeMenu="matMenu" xPosition="before">
-      <button mat-menu-item routerLink="/contact">Contact</button>
-    </mat-menu>
-
-    <button mat-raised-button [matMenuTriggerFor]="belowMenu">Services</button>
-    <mat-menu #belowMenu="matMenu" yPosition="below">
-      <button mat-menu-item routerLink="/services">Services</button>
-    </mat-menu>
+    <button mat-raised-button routerLink="/">Home</button>
+    <button mat-raised-button routerLink="/about">About</button>
+    <button mat-raised-button routerLink="/contact">Contact</button>
+    <button mat-raised-button routerLink="/services">Services</button>
 
     <button mat-raised-button [matMenuTriggerFor]="afterMenu">Cources</button>
     <mat-menu #afterMenu="matMenu" xPosition="after">

@@ -7,16 +7,20 @@ import { Component } from '@angular/core';
 })
 
 export class ContactComponent {
-  name: string = '';
-  email: string = '';
-  message: string = '';
+  formData = {
+    name: '',
+    email: '',
+    message: ''
+  };
 
   submitForm() {
-    // Add logic to handle form submission
-    console.log('Form submitted');
-    // Reset form fields
-    this.name = '';
-    this.email = '';
-    this.message = '';
+    // Add your form submission logic here
+    console.log(this.formData);
+    // Reset the form
+    this.formData = {
+      name: '',
+      email: '',
+      message: ''
+    };
   }
 }

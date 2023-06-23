@@ -16,7 +16,7 @@ body {
   font-weight: bold;
 }
 .content {
-  padding: 20px;
+  background-size: cover;
 }
 
 .content h1 {
@@ -43,15 +43,23 @@ body {
 .footer .nav-links a:hover {
   text-decoration: underline;
 }
-
-.home-container {
+.welcomeText{
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 700px;
-  text-align: center;
   background-color: #f2f2f2;
+  height: 200px;
+
+}
+.home-container {
+  width: 100%; 
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding: 20px;
+  height: 500px;
+  background-image: url('../../assets/image.jpg');
 }
 
 h1 {

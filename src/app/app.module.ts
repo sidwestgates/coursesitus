@@ -22,6 +22,11 @@ import {MatMenuModule} from '@angular/material/menu';
 import {MatButtonToggleModule} from '@angular/material/button-toggle';
 import {MatCardModule} from '@angular/material/card';
 import {MatDividerModule} from '@angular/material/divider';
+import { LoginComponent } from './login/login.component';
+import { SingupComponent } from './singup/singup.component';
+import { MatInputModule } from '@angular/material/input';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -34,9 +39,15 @@ import {MatDividerModule} from '@angular/material/divider';
     JavaComponent,
     AngularComponent,
     TestingComponent,
-    NavigationComponent
+    NavigationComponent,
+    LoginComponent,
+    SingupComponent
   ],
   imports: [
+    ReactiveFormsModule,
+    MatButtonModule,
+    MatInputModule,
+    MatFormFieldModule,
     MatDividerModule,
     MatButtonToggleModule,
     MatCardModule,

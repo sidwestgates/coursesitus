@@ -1,15 +1,14 @@
 body {
   font-family: Arial, sans-serif;
-  padding-left: 100px;
   text-align: justify;
   margin: 20px;
   padding: 20;
 }
 .about-container {
-  text-align: center;
-  max-width: 600px;
+  text-align: justify;
+  max-width: 90%;
   margin: 0 auto;
-  margin-bottom: 30px;
+  margin-top: 30px;
 }
 
 h2 {
@@ -26,8 +25,8 @@ p {
 p::first-letter {
   font-size: 28px;
   font-weight: bold;
-  color: #f06292;
-  float: left;
+  color: #0b0329;
+  float: inline-start;
   margin-right: 6px;
 }
 
