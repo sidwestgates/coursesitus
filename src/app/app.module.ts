@@ -27,6 +27,7 @@ import { SingupComponent } from './singup/singup.component';
 import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { ReactiveFormsModule } from '@angular/forms';
+import { PythonComponent } from './python/python.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +42,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     TestingComponent,
     NavigationComponent,
     LoginComponent,
-    SingupComponent
+    SingupComponent,
+    PythonComponent
   ],
   imports: [
     ReactiveFormsModule,

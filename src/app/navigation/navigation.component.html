@@ -1,6 +1,13 @@
 <mat-toolbar color="primary">
-  <span routerLink="/">CourseIT-US</span>
+  <span routerLink="/">CoursesIT-US</span>
   <span class="example-spacer"></span>
+  <mat-form-field class="search-bar">
+    <input matInput type="text" placeholder="Search">
+    <button mat-button matSuffix>
+      <mat-icon>search</mat-icon>
+    </button>
+  </mat-form-field>
+  
   <div class="example-button-row">
     <button mat-fab extended color="accent" routerLink="/login">Login</button>
     <button mat-fab extended color="accent" routerLink="/singup">SignUp</button>
@@ -9,16 +16,19 @@
 <section>
   <div class="example-button-row">
     <button mat-raised-button routerLink="/">Home</button>
-    <button mat-raised-button routerLink="/about">About</button>
-    <button mat-raised-button routerLink="/contact">Contact</button>
-    <button mat-raised-button routerLink="/services">Services</button>
 
-    <button mat-raised-button [matMenuTriggerFor]="afterMenu">Cources</button>
+    <button mat-raised-button [matMenuTriggerFor]="afterMenu">Courses</button>
     <mat-menu #afterMenu="matMenu" xPosition="after">
       <button mat-menu-item routerLink="/java">Java</button>
       <button mat-menu-item routerLink="/angular">Angular</button>
-      <button mat-menu-item routerLink="/about">Phython</button>
-      <button mat-menu-item routerLink="/about">C++</button>
+      <button mat-menu-item routerLink="/python">Phython</button>
+      <button mat-menu-item routerLink="/testing">Testing</button>
     </mat-menu>
+
+    <button mat-raised-button routerLink="/services">Services</button>
+    <button mat-raised-button routerLink="/about">About Us</button>
+    <button mat-raised-button routerLink="/contact">Contact Us</button>
+
+
   </div>
 </section>

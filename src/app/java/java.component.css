@@ -1,36 +1,49 @@
 body {
   height: 100%;
-    font-family: Arial, sans-serif;
-    padding-left: 50px;
-    text-align: justify;
-    margin: 20px;
-    padding: 20;
-  }
-  
-  h1 {
-    color: #333;
-    text-align: justify;
-  }
-  
-  h2 {
-    color: #666;
-    margin-top: 30px;
-  }
-  
-  p {
-    color: #555;
-    margin-bottom: 10px;
-  }
-  
-  .container {
-    max-width: 800px;
+  overflow: auto;
+  font-family: Arial, sans-serif;
+  text-align: justify;
+  margin-left: 100px;
+  padding: 20;
+}
+
+.tutorial-list {
+    max-width: 600px;
     margin: 0 auto;
   }
   
-  .container h2:first-child {
-    margin-top: 0;
+  h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
   }
   
-  .container p:last-child {
-    margin-bottom: 0;
+  li {
+    margin-bottom: 30px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    margin-bottom: 8px;
+  }
+  
+  strong {
+    font-weight: bold;
+  }
+  .redirectCoursePage {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 18px;
+    border-radius: 5px;
+    text-decoration: none;
+    background-color: #007bff;
+    color: #fff;
+    transition: background-color 0.3s ease;
   }

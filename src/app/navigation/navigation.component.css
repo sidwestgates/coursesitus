@@ -41,4 +41,14 @@
     justify-content: center;
     width: 120px;
   }
+  .search-bar {
+    width: 400px;
+    padding-right: 30px;
+    padding-top: 20px;
+  }
+  
+  input {
+    border-radius: 15px;
+
+  }
   
